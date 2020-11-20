@@ -100,7 +100,7 @@ int main(int argc, char **argv)
 			if(check_str_in_arr(temp_name, kill_names, kill_cnt))
 			{
 				printf("Killing %s, pid %d\n", temp_name, PID_arr[idx]);
-				//kill(PID_arr[idx], 9);
+				kill(PID_arr[idx], 9);
 			}
 		}
 	}
